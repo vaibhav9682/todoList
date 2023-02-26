@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/bee9754418.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <h1>TODO App</h1>
-    <form action="", method="post">
-  
-        <label for=""></label>
+    <div class="inputfield">
+        <form action="/users/createTask" id="formtag">
+            <div class="discdiv flexcolumn">
+                <label for="description">DESCRIPTION</label>
+                <input type="text" id="description" class="margintop" name="description"
+                    placeholder="What do you need to do?">
+            </div>
+
+            <div class="addInfo">
+                <div class="category flexcolumn">
+                    <label for="category">CATEGORY</label>
+                    <select name="category" id="category" class="margintop">
+                        <option value="no category">Choose a category</option>
+                        <option value="personal">Personal</option>
+                        <option value="school">School</option>
+                        <option value="work">Work</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="date flexcolumn">
+                    <label for="due-date">
+                        DUE DATE
+                    </label>
+
+                    <input type="date" name="Due-date" id="datefield" class="margintop">
+
+                </div>
+            </div>
+
+        </form>
+    </div>
 
 
 
-    </form>
+    <div class="btnsection">
+
+        <button type="submit" formmethod="post" form="formtag" class="btn" id="addbtn"><i
+                class="fa-sharp fa-solid fa-plus"></i>Add
+            Task</button>
+        <button type="button" class="btn" id="delbtn"><i class="fa-regular fa-trash-can"></i>Delete Task</button>
+    </div>
+
+
+    <script type="text/javascript" src="/JS/home.js"></script>
 </body>
+
 </html>
