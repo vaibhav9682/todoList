@@ -57,9 +57,9 @@ h1{
 #category:focus{
     outline: none;
 }
-label{
+/* label{
     font-weight: bolder;
-}
+} */
 /* button Section */
 .btnsection{
 /* border: 1px solid green; */
@@ -86,4 +86,14 @@ margin-top: 5vh;
 }
 #delbtn{
     background-color: rgb(201, 62, 62);
+}
+
+/* task List Section */
+
+.taskList{
+    display: flex;
+}
+
+.taskdiv{
+    display: flex;
 }

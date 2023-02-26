@@ -37,7 +37,7 @@
                         DUE DATE
                     </label>
 
-                    <input type="date" name="Due-date" id="datefield" class="margintop">
+                    <input type="date" name="date" id="datefield" class="margintop">
 
                 </div>
             </div>
@@ -54,6 +54,40 @@
             Task</button>
         <button type="button" class="btn" id="delbtn"><i class="fa-regular fa-trash-can"></i>Delete Task</button>
     </div>
+
+    
+
+        <form action="">
+            <% for(let i of task_List){%>
+
+                <div class="taskList">
+
+                <input type="checkbox" id="taskInfo" name="" value="">
+                <label for="taskInfo">
+                <div class="taskdiv">
+                    <div class="task">
+                        <h3>
+                            <%= i.task%>
+                        </h3>
+                        <p>
+                            <%= i.date%>
+                        </p>
+                    </div>
+                    <div class="showCategory">
+                        <p>
+                            <%= i.category%>
+                        </p>
+                    </div>
+                </div>
+                </label>
+
+            </div>
+
+                <%} %>
+        </form>
+
+    
+
 
 
     <script type="text/javascript" src="/JS/home.js"></script>
