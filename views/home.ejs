@@ -52,41 +52,42 @@
         <button type="submit" formmethod="post" form="formtag" class="btn" id="addbtn"><i
                 class="fa-sharp fa-solid fa-plus"></i>Add
             Task</button>
-        <button type="button" class="btn" id="delbtn"><i class="fa-regular fa-trash-can"></i>Delete Task</button>
+        <button type="submit" form="taskform" formmethod="get" class="btn" id="delbtn"><i
+                class="fa-regular fa-trash-can"></i>Delete Task</button>
     </div>
 
-    
-     
-        <form action="">
-            <% for(let i of task_List){%>
 
-                <div class="taskList">
 
-                <input type="checkbox" id="taskInfo" name="" value="">
+    <form action="/users/delform" id="taskform">
+        <% for(let i of task_List){%>
+
+            <div class="taskList">
+
+                <input type="checkbox" class="taskInfo" name="task" value=<%=i.task%>>
                 <label for="taskInfo">
-                <div class="taskdiv">
-                    <div class="task">
-                        <h3>
-                            <%= i.task%>
-                        </h3>
-                        <p>
-                            <%= i.date%>
-                        </p>
+                    <div class="taskdiv">
+                        <div class="task">
+                            <h3>
+                                <%= i.task%>
+                            </h3>
+                            <p>
+                                <%= i.date%>
+                            </p>
+                        </div>
+                        <div class="showCategory">
+                            <p>
+                                <%= i.category%>
+                            </p>
+                        </div>
                     </div>
-                    <div class="showCategory">
-                        <p>
-                            <%= i.category%>
-                        </p>
-                    </div>
-                </div>
                 </label>
 
             </div>
 
-                <%} %>
-        </form>
+            <%} %>
+    </form>
 
-    
+
 
 
 
