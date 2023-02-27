@@ -12,18 +12,21 @@
 
 <body>
     <h1>TODO App</h1>
+
+    <!-- input detail section -->
+
     <div class="inputfield">
         <form action="/users/createTask" id="formtag">
             <div class="discdiv flexcolumn">
                 <label for="description">DESCRIPTION</label>
-                <input type="text" id="description" class="margintop" name="description"
+                <input type="text" id="description" class="transBack margintop" name="description"
                     placeholder="What do you need to do?">
             </div>
 
             <div class="addInfo">
                 <div class="category flexcolumn">
                     <label for="category">CATEGORY</label>
-                    <select name="category" id="category" class="margintop">
+                    <select name="category" id="category" class="transBack margintop">
                         <option value="no category">Choose a category</option>
                         <option value="personal">Personal</option>
                         <option value="school">School</option>
@@ -37,7 +40,7 @@
                         DUE DATE
                     </label>
 
-                    <input type="date" name="date" id="datefield" class="margintop">
+                    <input type="date" name="date" id="datefield" class="transBack margintop">
 
                 </div>
             </div>
@@ -46,6 +49,7 @@
     </div>
 
 
+    <!-- button section -->
 
     <div class="btnsection">
 
@@ -57,13 +61,14 @@
     </div>
 
 
+    <!-- task list -->
 
     <form action="/users/delform" id="taskform">
         <% for(let i of task_List){%>
 
             <div class="taskList">
 
-                <input type="checkbox" class="taskInfo" name="task" value=<%=i.task%>>
+                <input type="checkbox" class="taskInfo" name="task" value=<%=i.id%>>
                 <label for="taskInfo">
                     <div class="taskdiv">
                         <div class="task">

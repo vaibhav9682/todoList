@@ -1,5 +1,9 @@
+
+/* input task section */
+
 body{
     font-family: sans-serif;
+    background-color: #F7F7F7;
 }
 h1{
     text-align: center;
@@ -57,16 +61,21 @@ h1{
 #category:focus{
     outline: none;
 }
-/* label{
-    font-weight: bolder;
-} */
+
+.transBack{
+    background-color: transparent;
+}
+
+
 /* button Section */
+
 .btnsection{
 /* border: 1px solid green; */
 width:25vw;
 margin: auto;
 margin-top: 5vh;
 }
+
 .btn{
     padding: 20px;
     font-size: 1rem;
@@ -75,9 +84,8 @@ margin-top: 5vh;
     border: none;
     /* text-align: center; */
     margin-bottom: 25%;
-   
-
 }
+
 .btn i{
     margin-right: 7px;
 }
@@ -89,6 +97,8 @@ margin-top: 5vh;
     background-color: rgb(201, 62, 62);
 }
 
+
+
 /* task List Section */
 
 .taskList{
@@ -96,7 +106,7 @@ margin-top: 5vh;
     /* border: 1px solid red; */
     width: 60vw;
     margin: auto;
-    background-color: rgba(240, 240, 240, 0.322);
+    background-color: rgba(212, 212, 212, 0.342);
     padding:5px;
     margin-bottom: 5px;
 }
@@ -110,21 +120,20 @@ margin-top: 5vh;
     align-items: center;
     
 }
+.task{
+    /* border: 1px solid yellow; */
+    width: 45vw;
+}
 .showCategory{
     /* border: 1px solid green; */
-    width: 5vw;
+    width: 6vw;
     text-align: center; 
-    height: 6vh;
+    height: auto;
     color: rgb(255, 255, 255);;
    /* background-color: brown;  */
     
 }
 .taskList:hover{
-    background-color: rgba(216, 216, 216, 0.726);
+    background-color: rgba(216, 216, 216, 0.87);
 
-}
-.taskInfo{
-    
-    margin-top: -30px;
-    /* width: 40vw; */
 }

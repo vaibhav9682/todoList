@@ -1,5 +1,5 @@
 
-
+//coloring to different categories
 var btn = document.getElementsByClassName("showCategory");
 
 for (let i of btn) {
