@@ -74,6 +74,7 @@ margin-top: 5vh;
     color:white;
     border: none;
     /* text-align: center; */
+    margin-bottom: 25%;
    
 
 }
@@ -92,8 +93,33 @@ margin-top: 5vh;
 
 .taskList{
     display: flex;
+    /* border: 1px solid red; */
+    width: 60vw;
+    margin: auto;
+    background-color: rgba(240, 240, 240, 0.322);
+    padding:5px;
+    margin-bottom: 5px;
 }
 
 .taskdiv{
+    /* border: 1px solid yellow; */
+    width: 55vw;
     display: flex;
+    margin-left: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.showCategory{
+    /* border: 1px solid green; */
+    width: 5vw;
+    text-align: center; 
+    height: 6vh;
+    color: rgb(255, 255, 255);;
+   /* background-color: brown;  */
+    
+}
+.taskList:hover{
+    background-color: rgba(216, 216, 216, 0.726);
+
 }
